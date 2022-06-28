@@ -23,16 +23,10 @@ def bubble_sort(L):
         for j in range(i):
             if L[j] > L[j+1]:
                 temp = L[j]
-                print(temp, 'temp = L[j]')
+                print(L)      
                 L[j] = L[j+1]
-                print(L[j], 'L[j] = L[j+1]' )
-                L[j+1] = temp
-                print(L[j+1],'L[j+1] = temp')
-                print(L)
-
-    
-     
-    print(L)           
+                L[j+1] = temp  
+    print(L)
     return L
 
 bubble_sort(L = [4,2,6,5,1,3])
