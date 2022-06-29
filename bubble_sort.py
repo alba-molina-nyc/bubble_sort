@@ -20,6 +20,22 @@ and do the above RINSE AND REPEAT
 
 def bubble_sort(L):
     for i in range(len(L) - 1, 0, -1):
+        print(i)
+        for j in range(i):
+            print(j)
+            if L[j] > L[j+1]:
+                temp = L[j]  
+                print(temp, 'temp')
+                L[j] = L[j+1]
+                L[j+1] = temp  
+    return L
+
+bubble_sort(L = [4,2,6,5,1,3])
+
+
+"""
+def bubble_sort(L):
+    for i in range(len(L) - 1, 0, -1):
         for j in range(i):
             if L[j] > L[j+1]:
                 temp = L[j]
@@ -30,3 +46,4 @@ def bubble_sort(L):
     return L
 
 bubble_sort(L = [4,2,6,5,1,3])
+"""
